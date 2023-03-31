@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<tr th:each="student: ${students}">
+    <td th:text="${student.id}" />
+    <td th:text="${student.name}" />
+    <br>
+</tr>
+
+<a href="http://localhost:8080/admin/services/">Return to services page</a>
+<a href="http://localhost:8080">Return to home page</a>
+
+
+</body>
+</html>

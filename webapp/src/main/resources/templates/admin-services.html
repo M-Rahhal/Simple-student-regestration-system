@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <body>
+
+    <span th:text="${message}"/>
+
+
+    <form method="get" action="/admin/services/">
+            <label for="add-student">add student</label>
+            <input type="radio" id="add-student" name="value" value="add-student" ><br>
+
+
+            <label for="add-course">add course</label>
+            <input type="radio" id="add-course" name="value" value="add-course" ><br>
+
+            <label for="add-course-to-a-student">add course to a student</label>
+            <input type="radio" id="add-course-to-a-student" name="value" value="add-course-to-a-student" ><br>
+
+            <label for="list-students">list students</label>
+            <input type="radio" id="list-students" name="value" value="list-students" ><br>
+
+            <label for="list-courses">list courses</label>
+            <input type="radio" id="list-courses" name="value" value="list-courses" ><br>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>
